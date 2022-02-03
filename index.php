@@ -18,7 +18,7 @@
 
     if ($resultCheck > 0){
         while ($row = mysqli_fetch_assoc($result)) {
-            echo $row['user_uid'] . "<br>";
+            echo $row['USER_uid'] . "<br>";
         }
     }
  ?>
