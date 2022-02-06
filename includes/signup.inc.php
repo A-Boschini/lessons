@@ -9,7 +9,15 @@
 
 
     $sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
-        VALUES ('$fist', '$last', 'email', '$uid', '$pwd');";
-    mysqli_query($conn, $sql);
+        VALUES (?, ?, ?, ?, ?);";
+    $stmt = mysqli_stmt_init($conn);
+
+    header("Location: ../index.php?signup=success");
+    if (!mysqli_stmt_prepare($stmt, $sql)){
+        echo "SQL error";
+    } else {
+        mysqli_stmt_bind_param($stmt, "sssss", $fist, $last, $email, $uid, $pwd);
+        mysqli_stmt_execute($stmt);
+    }
 
     header("Location: ../index.php?signup=success");
