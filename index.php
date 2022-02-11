@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-        <title></title>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>PHP project 01</title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
 
-<form action="includes/signup.inc.php" method="POST">
-    <input type="text" name="first" placeholder="Firstname">
-    <br>
-    <input type="text" name="last" placeholder="Lastname">
-    <br>
-    <input type="text" name="email" placeholder="E-mail">
-    <br>
-    <input type="text" name="uid" placeholder="Username">
-    <br>
-    <input type="password" name="pwd" placeholder="Password">
-    <br>
-    <button type="submit" name="submit">Sign Up</button>
-</form>
+        <nav>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="discover.php">About Us</a></li>
+                    <li><a href="blog.php">Find Blogs</a></li>
+                </ul>
 
-</body>
+            </div>
+        </nav>
+
+    </body>
 </html>
